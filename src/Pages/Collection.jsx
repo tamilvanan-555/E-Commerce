@@ -13,7 +13,7 @@ const lehengaTypes = [
       { img: "/collections/haldi5.jpeg",name:"Pink Haldi", price: 1499, discount: 20, rating: 4 },
       { img: "/collections/haldi-4.jfif",name:"Yellow Haldi", price: 2199, discount: 10, rating: 5 }
   ]},
- {
+ {     
   name: "Half Saree Lehenga", products: [
       { img: "/collections/half-1.jfif", name:"Pink Half Saree",price: 2499, discount: 15, rating: 4 },
       { img: "/collections/half-2.jfif", name:"Red Half Saree",price: 2999, discount: 10, rating: 5 },
