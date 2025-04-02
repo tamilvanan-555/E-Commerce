@@ -76,6 +76,7 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 import Orders from './Pages/Orders';
 import Profile from './Pages/Profile';
+import AdminPage from './Pages/AdminPage';
 
 function Layout() {
   const location = useLocation();  
@@ -95,6 +96,7 @@ function Layout() {
           <Route path="/register" element={<Register />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/profile" element ={<Profile/>}/>
+          <Route path='/admin' element={<AdminPage/>}/>
         </Routes>
       </div>
     </>
