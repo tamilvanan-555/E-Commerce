@@ -9,6 +9,3 @@ input:-webkit-autofill:active {
     backdrop-filter: blur(12px); /* backdrop-blur-lg */
     background-color: rgba(255, 255, 255, 0.9); /* bg-opacity-90 */
 }
-body{
-    box-sizing: border-box;
-}
