@@ -64,7 +64,7 @@ export default function Navbar() {
                 <Link to="/profile" className="block px-4 py-2 hover:bg-blue-400 hover:text-white">Profile</Link>
                 <Link to="/orders" className="block px-4 py-2 hover:bg-blue-400 hover:text-white">Orders</Link>
                 <Link to="/login" className="block px-4 py-2 hover:bg-blue-400 hover:text-white">Login</Link>
-                <Link to="/logout" className="block px-4 py-2 hover:bg-blue-400 hover:text-white">Logout</Link>
+                <Link to="" className="block px-4 py-2 hover:bg-blue-400 hover:text-white">Logout</Link>
               </div>
             )}
           </div>
