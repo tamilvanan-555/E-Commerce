@@ -36,10 +36,10 @@ function Login() {
               className="pl-10 border border-gray-300 rounded-md p-2 w-full focus:ring focus:outline-orange-400"
             />
           </div>
-          <div className="flex justify-between  text-sm text-gray-600 mb-4">
+          <div className="flex justify-center text-sm text-gray-600 mb-4">
             <span></span>
-            <a href="#" className="hover:text-green-500">Forgot Password?</a>
-            <Link to="/register" className="hover:text-green-500">Create a Acoount </Link>
+            <a href="#" className="pr-2">Don't have an account?</a>
+            <Link to="/register" className="hover:text-blue-600">Create a Acoount </Link>
           </div>
           <button className="bg-green-500 text-white p-2 rounded-md w-full hover:bg-green-600">Login</button>
         </form>
