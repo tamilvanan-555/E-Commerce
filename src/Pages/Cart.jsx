@@ -4,7 +4,7 @@ import img from "../assets/Logo1.png"
 const Cart = () => {
   const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState("M");
-  const pricePerItem = "product price"; // Assuming officer price
+  const pricePerItem = "product price"; 
   const discount = 40;
   const platformFee =20;
 
@@ -30,10 +30,10 @@ const Cart = () => {
       <h1 className="text-2xl md:text-3xl font-bold mb-6">My Cart</h1>
 
       <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl">
-        {/* Product Section */}
+       
         <div className="flex-1 bg-white p-6 rounded-2xl shadow-md flex flex-col sm:flex-row items-center gap-6 border border-green-200 w-full min-h-[200px]">
           <img
-            src={img} // Replace with your product image path
+            src={img} 
             alt="Product img"
             className="w-40 h-50 sm:w-40 sm:h-40 object-contain border-2 border-green-300 rounded-xl"
           />
@@ -67,7 +67,7 @@ const Cart = () => {
           </div>
         </div>
 
-        {/* Order Summary */}
+       
         <div className="w-full md:w-96 bg-white p-4 rounded-2xl shadow-md border border-green-200">
           <h2 className="text-lg font-semibold mb-4 text-center md:text-left">Order Details</h2>
           <div className="space-y-2 text-sm">
@@ -99,3 +99,6 @@ const Cart = () => {
 };
 
 export default Cart;
+
+
+
