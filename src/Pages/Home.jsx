@@ -31,21 +31,21 @@ const Home = () => {
 
   const newArrivals = [
     { id: 1, img: "./si-1.jpeg", name: "Bridal Lehenga", price: 2999, discount: 20, rating: 4 },
-    { id: 2, img: "./si-2.jpeg", name: "Embroidered Lehenga", price: 1799, discount: 15, rating: 5 },
+    { id: 2, img: "./si-2.jpeg", name: "Red Bridal Lehenga", price: 1799, discount: 15, rating: 5 },
     { id: 3, img: "./si-3.jpeg", name: "Designer Lehenga", price: 2499, discount: 10, rating: 4 },
-    { id: 4, img: "./si-4.jpeg", name: "Traditional Lehenga", price: 999, discount: 5, rating: 4 },
+    { id: 4, img: "./si-4.jpeg", name: "Blue Anarkali Lehenga", price: 999, discount: 5, rating: 4 },
     { id: 5, img: "./si-5.jpeg", name: "Party Wear Lehenga", price: 1299, discount: 25, rating: 5 },
-    { id: 6, img: "./si-6.jpeg", name: "Blue Anarkali Lehenga", price: 3999, discount: 30, rating: 4 },
-    { id: 7, img: "./si-7.jpeg", name: "Red Bridal Lehenga", price: 4599, discount: 18, rating: 5 },
+    { id: 6, img: "./si-6.jpeg", name: "Traditional Lehenga", price: 3999, discount: 30, rating: 4 },
+    { id: 7, img: "./si-7.jpeg", name: "Embroidered Lehenga", price: 4599, discount: 18, rating: 5 },
     { id: 8, img: "./si-8.jpeg", name: "Ethnic Lehenga", price: 1499, discount: 12, rating: 4 },
   ];
 
   return (
     <div className="w-full min-h-screen bg-gradient-to-r from-blue-100 to-purple-200 mt-20">
       <div className="relative w-full object-cover overflow-hidden mx-auto">
-        <img src={images[currentIndex].src} className="w-full h-auto sm:h-[500px] rounded-2xl object-cover" alt="carousel" />
-        <button onClick={prevSlide} className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full">❮</button>
-        <button onClick={nextSlide} className="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full">❯</button>
+        <img src={images[currentIndex].src} className="w-full h-auto sm:h-[500px] object-cover" alt="carousel" />
+        <button onClick={prevSlide} className="absolute left-2 top-1/2 -translate-y-1/2 text-white p-3 rounded-full font-bold">❮</button>
+        <button onClick={nextSlide} className="absolute right-2 top-1/2 -translate-y-1/ text-white p-3 rounded-full font-bold">❯</button>
       </div>
 
       <h2 className="font-bold text-3xl mx-20 mt-14">New Arrivals</h2>
@@ -54,10 +54,10 @@ const Home = () => {
           const discountedPrice = (item.price * (1 - item.discount / 100)).toFixed(0);
           return (
             <div key={item.id} className="bg-white shadow-lg rounded-lg p-4 transition-transform hover:scale-105 relative">
-              <div className="relative group">
-                <img src={item.img} alt={item.name} className="w-full h-40 object-cover rounded-md group-hover:scale-110 transition" />
+              <div className="relative group cursor-pointer">
+                <img src={item.img} alt={item.name} className="w-full h-40 object-cover object-top rounded-md group-hover:scale-110 transition" />
                 <span className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 text-xs rounded">{item.discount}% OFF</span>
-                <button onClick={() => toggleWishlist(item.id)} className="absolute top-2 right-2 text-red-500 text-xl">
+                <button onClick={() => toggleWishlist(item.id)} className="absolute top-2 right-2 text-red-500 text-xl cursor-pointer">
                   <FaRegHeart />
                 </button>
               </div>
@@ -109,6 +109,7 @@ const Home = () => {
     </div>
   );
 };
+
 
 export default Home;
 
@@ -205,4 +206,7 @@ export default Home;
 //     </div>
 //   );
 // }
+
+
+export default Home;
 
