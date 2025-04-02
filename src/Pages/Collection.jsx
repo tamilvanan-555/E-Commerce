@@ -50,8 +50,8 @@ const lehengaTypes = [
 
 export default function LehengaCollection() {
   return (
-    <div className="p-4 bg-gradient-to-r from-blue-100 to-purple-200 min-h-screen">
-      <h1 className="text-3xl font-bold text-center mb-6">Lehenga Collection</h1>
+    <div className="p-4 bg-gradient-to-r from-blue-100 to-purple-200 mt-18">
+      <h1 className="text-3xl font-bold text-center mb-6 ">Lehenga Collection</h1>
       {lehengaTypes.map((lehenga, index) => (
         <div key={index} className="mb-10">
           <h2 className="text-2xl font-semibold text-center mb-4 animate-bounce">{lehenga.name}</h2>
