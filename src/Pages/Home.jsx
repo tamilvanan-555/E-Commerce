@@ -41,8 +41,8 @@ const Home = () => {
     <div className="w-full min-h-screen bg-gradient-to-r from-blue-100 to-purple-200 mt-20">
       <div className="relative w-full object-cover overflow-hidden mx-auto">
         <img src={images[currentIndex].src} className="w-full h-auto sm:h-[500px] object-cover" alt="carousel" />
-        <button onClick={prevSlide} className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full">❮</button>
-        <button onClick={nextSlide} className="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full">❯</button>
+        <button onClick={prevSlide} className="absolute left-2 top-1/2 -translate-y-1/2 text-white p-3 rounded-full font-bold">❮</button>
+        <button onClick={nextSlide} className="absolute right-2 top-1/2 -translate-y-1/ text-white p-3 rounded-full font-bold">❯</button>
       </div>
 
       <h2 className="font-bold text-3xl mx-20 mt-14">New Arrivals</h2>
