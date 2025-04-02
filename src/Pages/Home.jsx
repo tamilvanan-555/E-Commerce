@@ -148,7 +148,7 @@ const Home = () => {
   return (
     <div className="w-full min-h-screen bg-gradient-to-r from-blue-100 to-purple-200 mt-20">
       <div className="relative w-full object-cover overflow-hidden mx-auto">
-        <img src={images[currentIndex].src} className="w-full h-auto sm:h-[500px] rounded-2xl object-cover" alt="carousel" />
+        <img src={images[currentIndex].src} className="w-full h-auto sm:h-[500px] object-cover" alt="carousel" />
         <button onClick={prevSlide} className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full">❮</button>
         <button onClick={nextSlide} className="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full">❯</button>
       </div>
@@ -159,10 +159,10 @@ const Home = () => {
           const discountedPrice = (item.price * (1 - item.discount / 100)).toFixed(0);
           return (
             <div key={item.id} className="bg-white shadow-lg rounded-lg p-4 transition-transform hover:scale-105 relative">
-              <div className="relative group">
+              <div className="relative group cursor-pointer">
                 <img src={item.img} alt={item.name} className="w-full h-40 object-cover rounded-md group-hover:scale-110 transition" />
                 <span className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 text-xs rounded">{item.discount}% OFF</span>
-                <button onClick={() => toggleWishlist(item.id)} className="absolute top-2 right-2 text-red-500 text-xl">
+                <button onClick={() => toggleWishlist(item.id)} className="absolute top-2 right-2 text-red-500 text-xl cursor-pointer">
                   <FaRegHeart />
                 </button>
               </div>
