@@ -1,5 +1,5 @@
 {
-  "homepage":"https://tamilvanan-555.github.io/E-Commerce",
+  "homepage": "https://tamilvanan-555.github.io/E-Commerce",
   "name": "botique",
   "private": true,
   "version": "0.0.0",
@@ -16,6 +16,7 @@
     "@tailwindcss/vite": "^4.0.17",
     "axios": "^1.8.4",
     "bootstrap": "^5.3.3",
+    "framer-motion": "^12.6.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
