@@ -79,9 +79,9 @@ export default function LehengaCollection() {
               return (
                 <div key={item.name} className="bg-white shadow-lg rounded-lg p-4 transition-transform hover:scale-105 relative">
                   <div className="relative group cursor-pointer">
-                    <img src={item.img} alt={item.name} className="w-full h-40 object-cover object-top rounded-md" />
-                    <span className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 text-xs rounded">{item.discount}% OFF</span>
-                    <button onClick={() => toggleFavorite(item.id)} className="absolute top-2 right-2 text-red-500 text-xl">
+                    <img src={item.img} alt={item.name} className="w-full h-45 object-cover object-top rounded-md" />
+                    <span className="absolute top-1 left-1 bg-red-400 w-7 h-7 font-bold text-white  py-1 text-sm rounded-full">{item.discount}%</span>
+                    <button onClick={() => toggleFavorite(item.id)} className="absolute top-1 right-1 text-red-500 text-xl font-bold">
                       {isFavorited ? <FaHeart /> : <FaRegHeart />}
                     </button>
                   </div>
