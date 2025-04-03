@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Login() {
   return (
     <div className="flex flex-col md:flex-row w-full justify-center items-center min-h-screen border-gray-100 border rounded-2xl shadow-md bg-gradient-to-r from-blue-100 to-purple-200">
-      {/* Left Side - Image & Text */}
+     
       <div className="md:flex md:w-1/2 h-full items-center justify-center mt-3.5">
         <div className="text-center max-w-md">
           <img src={img} alt="Illustration" className="w-80 mx-auto mb-6 rounded-2xl sm:mt-4" />
@@ -16,7 +16,7 @@ function Login() {
         </div>
       </div>
       
-      {/* Right Side - Login Form */}
+     
       <div className="flex flex-col justify-center items-center md:w-1/2 w-full p-8 md:p-20bg-gradient-to-r from-blue-100 to-purple-200 rounded-lg">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Login</h2>
         <form className="w-full max-w-sm">
